@@ -1,0 +1,25 @@
+{
+  "name": "stemum-course-registration",
+  "version": "1.0.0",
+  "description": "Course enrollment system with Stripe integration for Railway",
+  "main": "server-railway.js",
+  "scripts": {
+    "start": "node server-railway.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "course",
+    "enrollment",
+    "stripe",
+    "payment"
+  ],
+  "author": "STEMum",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "stripe": "^14.10.0",
+    "cors": "^2.8.5"
+  }
+}
