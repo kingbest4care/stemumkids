@@ -27,7 +27,7 @@ console.log('   Frontend URL:', FRONTEND_URL);
 
 // Middleware
 app.use(cors({
-    origin: FRONTEND_URL === 'https://stemumkids.sophoraconsult.com/stemum-registration' ? '*' : FRONTEND_URL.split(','),
+    origin: FRONTEND_URL === 'https://stemumkids.sophoraconsult.com/stemum-registration' ? 'https://stemumkids.sophoraconsult.com/stemum-registration' : FRONTEND_URL.split(','),
     credentials: true
 }));
 app.use(express.json());
@@ -51,7 +51,7 @@ app.get('/health', (req, res) => {
 });
 
 // Create Stripe Checkout Session
-app.post('/create-checkout-session', async (req, res) => {
+app.post('//create-checkout-session', async (req, res) => {
     try {
         console.log('📝 Received checkout request');
         
